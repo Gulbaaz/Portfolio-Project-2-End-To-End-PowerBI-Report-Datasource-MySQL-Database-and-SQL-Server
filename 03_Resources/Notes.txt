@@ -1,0 +1,26 @@
+Inventory Environment Analysis – Power BI Reports
+
+1. Data Sources:
+- MySQL and SQL Server used as separate datasources for test and production environment data
+- Tables joined using LEFT JOIN and imported into Power BI for analysis
+
+2. Data Processing:
+- Test environment data: combined, imported, and used to calculate KPIs
+- Production data: cleaned in SQL Server (nulls and blanks handled) and imported
+- Switched datasource to MySQL for production use case with similar cleaning steps
+
+3. Reports:
+- 6 KPIs created for test environment:
+   • Average Demand per Day
+   • Average Availability per Day
+   • Total Supply Shortage
+   • Total Profit
+   • Total Loss
+   • Average Daily Loss
+- Same report structure used for production stage with updated data sources
+- Separate Power BI workspaces created for SQL Server and MySQL sources
+
+4. Tools:
+- SQL Server & MySQL for data storage and cleaning
+- Power BI for reporting
+- Data transformation, filtering, and visualization techniques used for both environments
